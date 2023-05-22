@@ -1,0 +1,42 @@
+@import "./setting";
+@import "./Components/Header";
+@import "./Components/Footer";
+
+.bp-wakanda-container{
+    width: 100%;
+    height: 100%;
+}
+.bp-wakanda-content{
+    p{
+        color: $color-1;
+    }
+    .bp-wakanda-section1{
+        background-image: url(./../../Assets/Illustrations&Logo/Wakanda/Pantherwakanda1.png);
+        background-size: 100%;
+        width: 100%;
+        height: 400px;
+        padding-left: 5%;
+        h2{
+            color: $color-4;
+        }    
+        p{
+            width: 500px;
+        }
+    }
+
+    .bp-wakanda-text{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+   .bp-wakanda-content{
+     .bp-wakanda-text{
+        grid-template-columns: 100%;
+    }
+   }
+}

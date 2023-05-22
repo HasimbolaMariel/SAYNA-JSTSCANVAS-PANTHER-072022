@@ -1,0 +1,44 @@
+.bp-header{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    .bp-nav-link{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        list-style: none;
+        li{
+            margin-left: 30px;
+            margin-right: 10px;
+            a{
+                text-decoration: none;
+                color: $color-1;
+            }
+            .bp-current{
+                color: $color-5;
+                border-bottom: 2px solid $color-5;
+            }
+        }
+        .bp-header-logo{
+            position: absolute;
+            left: 10%;
+        }
+    }
+    
+}
+//reglage sur mobile
+@media screen and (max-width: 550px) {
+    .bp-nav-link{
+        display: block !important;
+        text-align: center;
+        li{
+            margin-top: 80px;
+        }
+        .bp-header-logo{
+            margin-top: -70px;
+        }
+    }
+    
+}

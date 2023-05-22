@@ -1,0 +1,45 @@
+$color-1: #FFFFFF;
+$color-2: #F2CEF2;
+$color-3: #9E91B7;
+$color-4: #DF99F2;
+$color-5: #3D2DA6;
+$color-6: #07338C;
+$color-7: #021740;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    background-image: url(./../../Assets/Illustrations&Logo/Allpages/arrière_plan.png);
+    background-size: cover;
+}  
+h1{
+    color: $color-3;
+    animation: fade-in-left 1s ease-in-out;
+    font-family: "Panthera";
+    
+} 
+p{
+    text-align: justify;
+    animation: fade-in-left 1s ease-in-out;
+}
+h2{
+    animation: fade-in-left 1s ease-in-out;
+}
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@font-face {
+  font-family: "Panthera";
+  src: url(./../../Assets/Police/panthera.ttf);
+}

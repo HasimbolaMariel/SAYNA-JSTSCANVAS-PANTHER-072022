@@ -1,0 +1,233 @@
+.bp-bar-de-rsociaux{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50px;
+    height: 300px;
+    border-left: 5px solid $color-3;
+    .bp-2em-bar{
+        width: 0px;
+        border-left: 5px solid $color-3;
+        height: 200px;
+        margin-left: 30px;
+    }
+    ul{
+        list-style: none;
+        color: $color-3;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+}
+
+//le contenu de l'accueil
+.bp-accueil-content{
+    width: 100%;
+    height: auto;
+    color: $color-1;
+}
+.bp-accueil-section1{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+
+    .bp-text-section1{
+        margin-top: 150px;
+        margin-left: 10%;
+        p{
+            text-align: justify;
+            a{
+                color: $color-1;
+            }
+        }
+        h1{
+            color: $color-4;
+        }
+        h2{
+            color: $color-4;
+            font-weight: 100;
+        }
+    }
+    .bp-img-section1{
+        img{
+            width: 100%;
+        }
+    }
+}
+//***********************accueil Section 2**************************
+.bp-accueil-section2{
+    margin-top: -80px;
+    margin-left: 10%;
+    background-color: $color-7;
+    display: grid;
+    grid-template-columns: 600px 600px 400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 290px;
+
+    figure{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        img{
+            width: 250px;
+            height: 290px;
+        }
+        legend{
+            p, h1{
+                text-align: justify;
+                padding: 20px;
+            }
+        }
+        .bp-killmonger{
+            margin-left: 30px;
+        }
+    }
+}
+//*****************************section 3*************************************
+.bp-accueil-section3{
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 100px;
+    .bp-section3-gauche{
+        p{
+            text-align: justify;
+        }
+        .bp-section3-text{
+            margin-top: 20px;
+        }
+    }
+    .bp-section3-droite{
+        .bp-bio-de-tchalla{
+            width: 500px;
+            height: 800px;
+            background-color: $color-1;
+            color:$color-7;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 300px;
+            img{
+                margin-top: -300px;
+            }
+            p{
+                text-align: justify;
+                padding-left: 20px;
+            }
+            button{
+                background-color: $color-6;
+                border-radius: 10px;
+                padding: 15px;
+                margin: 15px;
+                color: $color-1;
+                border: none;
+            }
+        }
+    }
+}
+//**********************************Accueil Section 4*****************************************
+.bp-accueil-section4{
+    padding-top: 100px;
+    width: 100%;
+   background-image: url(../../Assets/Illustrations&Logo/Accueil/Pantherhome7.png);
+   background-size: cover;
+    .bp-section4-contact{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        background-color: rgba($color: $color-1, $alpha: 0.25);
+        background-image: linear-gradient(to bottom, $color-1, rgba($color: $color-1, $alpha: 0));
+        border-radius: 100px;
+        height: 600px;
+        p{
+            text-align: center;
+        }
+        .bp-contact-header{
+            width: 100%;
+            height: 150px;
+            color: $color-7;
+            padding-top: 10px;
+        }
+        input{
+            width: 520px;
+            height: 56px;
+            border: 1px solid $color-7;
+            border-radius: 38px;
+            background: none;
+            outline: none;
+            padding-left: 20px;
+            color: $color-7;
+        }
+        textarea{
+            width: 520px;
+            height: 100px;
+            border: 1px solid $color-7;
+            border-radius: 38px;
+            background: none;
+            outline: none;
+            padding-left: 20px;
+            padding-top: 20px;
+            color: $color-7;
+        }
+        button{
+            width: 174px;
+            height: 56px;
+            background-color: $color-1;
+            color: $color-7;
+            border-radius: 38px;
+            border: none;
+            transition: 300ms;
+            &:hover{
+                box-shadow: 0 0 20px $color-7;
+                transition: 300ms;
+            }
+        }
+        h1{
+            color: $color-7;
+            font-size: 40px;
+        }
+    }
+}
+//*************************Responsive******************************************
+@media screen and (max-width:1250px) {
+    .bp-accueil-section1{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        .bp-text-section1{
+            padding-bottom: 50px;
+        }
+    }
+    .bp-accueil-section2{
+        margin-top: 200px;
+    }
+    
+    .bp-accueil-section3{
+        grid-template-columns: 100%;
+       .bp-section3-droite{
+        margin: auto;
+       }
+    }
+    .bp-accueil-section4{
+        .bp-section4-contact{
+            width: 80%;
+            input{
+                width: 80%;
+            }
+            textarea{
+                width: 80%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 580px) {
+    .bp-accueil-section3{
+        .bp-section3-droite{
+            .bp-bio-de-tchalla{
+                width: 80%;
+            }
+        }
+    }
+}
