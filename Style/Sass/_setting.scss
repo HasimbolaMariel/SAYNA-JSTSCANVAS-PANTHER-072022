@@ -16,10 +16,10 @@ body, html{
     background-image: url(./../../Assets/Illustrations&Logo/Allpages/arrière_plan.png);
     background-size: cover;
 }  
-h1{
+h1, .beyno{
     color: $color-3;
     animation: fade-in-left 1s ease-in-out;
-    font-family: "Panthera";
+    font-family: "beyno";
     
 } 
 p{
@@ -46,4 +46,8 @@ h2{
 @font-face {
   font-family: "Wakanda";
   src: url(./../../Assets/Police/wakanda-forever-regular.ttf);
+}
+@font-face {
+  font-family: "beyno";
+  src: url(./../../Assets/Police/beyno-regular.otf);
 }

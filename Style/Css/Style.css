@@ -9,10 +9,10 @@ body, html {
   background-image: url(./../../Assets/Illustrations&Logo/Allpages/arrière_plan.png);
   background-size: cover; }
 
-h1 {
+h1, .beyno {
   color: #9E91B7;
   animation: fade-in-left 1s ease-in-out;
-  font-family: "Panthera"; }
+  font-family: "beyno"; }
 
 p {
   text-align: justify;
@@ -34,6 +34,9 @@ h2 {
 @font-face {
   font-family: "Wakanda";
   src: url(./../../Assets/Police/wakanda-forever-regular.ttf); }
+@font-face {
+  font-family: "beyno";
+  src: url(./../../Assets/Police/beyno-regular.otf); }
 .bp-header {
   display: inline-block;
   width: 100%;
@@ -50,7 +53,11 @@ h2 {
       margin-right: 10px; }
       .bp-header .bp-nav-link li a {
         text-decoration: none;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        transition: 300ms; }
+        .bp-header .bp-nav-link li a:hover {
+          border-bottom: 2px solid #FFFFFF;
+          transition: 300ms; }
       .bp-header .bp-nav-link li .bp-current {
         color: #3D2DA6;
         border-bottom: 2px solid #3D2DA6; }
