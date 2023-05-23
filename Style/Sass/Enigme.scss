@@ -41,6 +41,10 @@
         width: 90%;
         margin: auto;
         margin-top: 50px;
+        h1{
+            font-family: "Wakanda";
+            word-spacing: 10px;
+        }
     }
 
     .bp-enigme-section3{
@@ -83,6 +87,9 @@
         }
 
     }
+}
+.waka{
+    font-family: "Wakanda";
 }
 
 @media screen and (max-width: 1250px) {

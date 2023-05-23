@@ -31,6 +31,9 @@ h2 {
 @font-face {
   font-family: "Panthera";
   src: url(./../../Assets/Police/panthera.ttf); }
+@font-face {
+  font-family: "Wakanda";
+  src: url(./../../Assets/Police/wakanda-forever-regular.ttf); }
 .bp-header {
   display: inline-block;
   width: 100%;
@@ -141,6 +144,9 @@ h2 {
   width: 90%;
   margin: auto;
   margin-top: 50px; }
+  .bp-enigme-content .bp-enigme-section2 h1 {
+    font-family: "Wakanda";
+    word-spacing: 10px; }
 .bp-enigme-content .bp-enigme-section3 {
   padding-top: 100px;
   margin: auto;
@@ -170,6 +176,9 @@ h2 {
     position: absolute;
     margin-top: -300px;
     margin-left: 100px; }
+
+.waka {
+  font-family: "Wakanda"; }
 
 @media screen and (max-width: 1250px) {
   .bp-enigme-content .bp-enigme-section1 {
