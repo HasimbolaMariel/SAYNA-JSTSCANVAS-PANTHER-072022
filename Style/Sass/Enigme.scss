@@ -55,6 +55,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         color: $color-1;
+        display: none;
         .bp-section3-gauche{
             input{
                 background: none;
@@ -88,6 +89,9 @@
         }
 
     }
+    .active{
+        display: grid;
+    }
 }
 
 
@@ -116,3 +120,53 @@
         }
     }
 }
+
+.popup {
+    font-size: x-large;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px white;
+    background-color: $color-7;
+    color: green;
+    text-align: center;
+    padding: 10%;
+    z-index: 9999;
+  }
+  
+  .error-popup {
+    font-size: x-large;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px white;
+    background-color: $color-7;
+    color: red;
+    text-align: center;
+    padding: 10%;
+    z-index: 9999;
+  }
+  .btnOk{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10%;
+    transition: 300ms;
+    &:hover{
+        transform: scale(110%);
+        transition: 300ms;
+    }
+  }
+  input{
+    color: white;
+    font-size: large;
+  }
