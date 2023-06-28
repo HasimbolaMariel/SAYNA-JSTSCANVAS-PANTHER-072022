@@ -42,6 +42,26 @@ p {
 .fade-in.fade-in-visible {
   animation: fade-in-left 1s ease-in-out; }
 
+.bp-bar-de-rsociaux {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50px;
+  height: 300px;
+  border-left: 5px solid #9E91B7; }
+  .bp-bar-de-rsociaux .bp-2em-bar {
+    width: 0px;
+    border-left: 5px solid #9E91B7;
+    height: 200px;
+    margin-left: 30px; }
+  .bp-bar-de-rsociaux ul {
+    list-style: none;
+    color: #9E91B7;
+    padding-left: 20px;
+    padding-top: 5px; }
+    .bp-bar-de-rsociaux ul img:hover {
+      filter: brightness(0) invert(1); }
+
 .bp-header {
   display: inline-block;
   width: 100%;

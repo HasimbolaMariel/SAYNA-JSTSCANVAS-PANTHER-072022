@@ -73,5 +73,6 @@ function createPopup(message, nbr) {
   popup.innerHTML = message;
   return popup;
 }
+//Les image
 
 
