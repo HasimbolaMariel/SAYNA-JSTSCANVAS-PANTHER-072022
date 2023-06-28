@@ -11,20 +11,15 @@ body, html {
 
 h1, .beyno {
   color: #9E91B7;
-  animation: fade-in-left 1s ease-in-out;
   font-family: "beyno"; }
 
 p {
-  text-align: justify;
-  animation: fade-in-left 1s ease-in-out; }
-
-h2 {
-  animation: fade-in-left 1s ease-in-out; }
+  text-align: justify; }
 
 @keyframes fade-in-left {
   from {
     opacity: 0;
-    transform: translateX(-300px); }
+    transform: translateX(-400px); }
   to {
     opacity: 1;
     transform: translateX(0); } }
@@ -40,6 +35,12 @@ h2 {
 .waka {
   font-family: "Wakanda";
   letter-spacing: 20px; }
+
+.fade-in {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; }
+
+.fade-in.fade-in-visible {
+  animation: fade-in-left 1s ease-in-out; }
 
 .bp-header {
   display: inline-block;

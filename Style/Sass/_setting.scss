@@ -18,21 +18,17 @@ body, html{
 }  
 h1, .beyno{
     color: $color-3;
-    animation: fade-in-left 1s ease-in-out;
     font-family: "beyno";
     
 } 
 p{
     text-align: justify;
-    animation: fade-in-left 1s ease-in-out;
 }
-h2{
-    animation: fade-in-left 1s ease-in-out;
-}
+
 @keyframes fade-in-left {
   from {
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(-400px);
   }
   to {
     opacity: 1;
@@ -54,4 +50,15 @@ h2{
 .waka{
     font-family: "Wakanda";
     letter-spacing: 20px;
+}
+.fade-in {
+  //opacity: 0;
+  //transform: translateX(-100px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.fade-in-visible {
+  //opacity: 1;
+  //transform: translateX(0);
+  animation: fade-in-left 1s ease-in-out;
 }
